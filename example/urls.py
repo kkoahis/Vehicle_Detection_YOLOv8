@@ -19,5 +19,5 @@ from Detect.views import detect_vehicles
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('detect/', detect_vehicles),
+    path('detect/', detect_vehicles.as_view()),
 ]
